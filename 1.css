@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.logo img {
+    width: 130px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.title {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.login {
+    display: flex;
+    width: 500px;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-label input {
+    display: block;
+    margin-bottom: 20px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc;
+    outline: none;
+}
+
+.login-label span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #A7A7A7;
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+input:focus {
+    background-color: whitesmoke;
+    border: 2px solid #343434;
+}
+
+.login-label .span-active {
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
+
+.login-icons button {
+    width: 110px;
+    margin: 3px;
+    margin-top: 0;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.icon_button1 {
+    background-color: #0078f6;
+}
+
+.icon_button2 {
+    background-color: white;
+}
+
+.icon_button3 {
+    background-color: black;
+}
+
+.login-icons img {
+    height: 20px;
+    margin: auto;
+}
+
+.login-checkbox {
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 14.5px;
+    font-weight: 500;
+    display: flex;
+    margin-left: 150px;
+}
+
+.input-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.input-checkbox:checked {
+    background-color: red;
+}
+
+.input-checkbox:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.wallpaper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.wrapper {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__button {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.login__button svg {
+    fill: white;
+}
+
+.login__button:disabled {
+    cursor: auto;
+    background-color: white;
+    border: 2px solid #CCC;
+}
+
+.login__button:disabled svg {
+    fill: #c4c4c4;
+}
+
+.login__link {
+    font-size: 13px;
+    text-decoration: none;
+    color: #A7A7A7;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.login__link:hover {
+    color: #333;
+}
